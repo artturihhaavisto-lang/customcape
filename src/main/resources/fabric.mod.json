@@ -1,0 +1,31 @@
+{
+	"schemaVersion": 1,
+	"id": "customcape",
+	"version": "${version}",
+	"name": "Custom Cape",
+	"description": "Clientside cape selector with all official Minecraft capes plus custom 64x32 cape support.",
+	"authors": [
+		"customcape"
+	],
+	"contact": {},
+	"license": "MIT",
+	"icon": "assets/customcape/icon.png",
+	"environment": "client",
+	"entrypoints": {
+		"client": [
+			"dev.customcape.CustomCapeClient"
+		]
+	},
+	"mixins": [
+		{
+			"config": "customcape.client.mixins.json",
+			"environment": "client"
+		}
+	],
+	"depends": {
+		"fabricloader": ">=0.19.3",
+		"minecraft": "~26.2",
+		"java": ">=25",
+		"fabric-api": "*"
+	}
+}
